@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import logo from './assets/logo.png';
 import Pergunta from './perguntas.js'
-import Bottom from './bottom.js'
 
 export default function InicPage(){
     const Application = styled.div`
@@ -47,10 +46,7 @@ export default function InicPage(){
                 <Foto_logo src={logo}></Foto_logo>
                 <Nome_logo>ZapRecall</Nome_logo>
             </Logo>
-            <Perguntas>
-                <Pergunta/>
-            </Perguntas>
-            <Bottom/>
+            <Pergunta/>
         </Application>
     )
 }
