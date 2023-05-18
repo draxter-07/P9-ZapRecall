@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import logo from './assets/logo.png';
 import Pergunta from './perguntas.js'
+import Bottom from './bottom.js'
 
 export default function InicPage(){
     const Application = styled.div`
@@ -38,18 +39,6 @@ export default function InicPage(){
     @media (min-width: 1px){
         width: 100%;
     }`;
-    const Bottom = styled.div`
-    @media (min-width: 1px){
-        box-sizing: border-box;
-        position: fixed;
-        bottom: 0px;
-        width: 100%;
-        padding: 20px;
-        background-color: rgb(50, 50, 50);
-        color: white;
-        text-align: center;
-        font-size: 50px;
-    }`;
     const Foto_logo = styled.img`width: 20%;`;
     const Nome_logo = styled.span``;
     return(
@@ -61,9 +50,7 @@ export default function InicPage(){
             <Perguntas>
                 <Pergunta/>
             </Perguntas>
-            <Bottom>
-                Fim
-            </Bottom>
+            <Bottom/>
         </Application>
     )
 }

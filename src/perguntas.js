@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import React from 'react'
 import seta_play from './assets/seta_play.png'
+import concluido from './concluidos.js'
 
 export default function Perguntas(){
     let perguntas = [['Pergunta1', 'Resposta1'], ['Pergunta2', 'Resposta2']];
@@ -20,6 +21,10 @@ export default function Perguntas(){
         let element = e.target.parentElement.parentElement.parentElement;
         element.children[1].style.display = 'none';
         element.children[2].style.display = 'flex';
+    }
+    function end_question(){
+        const [concluido, setConcluido] = React.useState(concluido);
+        setConcluido(concluido + 1);
     }
     const Parte = styled.div`
     @media (min-width: 1px){}`;
@@ -104,7 +109,7 @@ export default function Perguntas(){
             <Resposta>
                 <Question>{pergunta[1]}</Question>
                 <Botoes>
-                    <button>Oie</button>
+                    <button onClick={end_question}>Oie</button>
                     <button>Oie</button>
                     <button>Oie</button>
                 </Botoes>
