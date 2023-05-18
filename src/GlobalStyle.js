@@ -151,5 +151,4 @@ const GlobalStyle = createGlobalStyle`
     display: none;
   }`
 
-  export default GlobalStyle;
-
+export default GlobalStyle;
