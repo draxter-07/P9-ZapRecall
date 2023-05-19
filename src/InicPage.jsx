@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import logo from './assets/logo.png';
-import Pergunta from './perguntas.js'
+import Pergunta from './perguntas.jsx'
 
 export default function InicPage(){
     const Application = styled.div`

@@ -6,7 +6,7 @@ import icone_certo from './assets/icone_certo.png'
 import icone_quase from './assets/icone_quase.png'
 import icone_erro from './assets/icone_erro.png'
 
-let perguntas = [['Pergunta1', 'Resposta1'], ['Pergunta2', 'Resposta2']];
+let perguntas = [['Pergunta1', 'Resposta1'], ['Pergunta2', 'Resposta2'], ['Pergunta3', 'Resposta3']];
 
 export default function Perguntas(){
     const [concluidos, setConc] = React.useState(0);
@@ -33,7 +33,7 @@ export default function Perguntas(){
         }`;
         return(
             <Bottom data-test="footer">
-                {atr.conc}/2 Concluídos
+                {atr.conc}/{perguntas.length} Concluídos
             </Bottom>
         )
     }
