@@ -5,10 +5,9 @@ import Pergunta from './perguntas.js'
 
 export default function InicPage(){
     const Application = styled.div`
-    @media (min-width: 769px){
+    @media (min-width: 768px){
         box-sizing: border-box;
         width: 768px;
-        background-color: rgb(255, 50, 50);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -16,7 +15,6 @@ export default function InicPage(){
     @media (max-width: 768px){
         box-sizing: border-box;
         width: 100%;
-        background-color: rgb(255, 50, 50);
         display: flex;
         flex-direction: column;
         align-items: center;
