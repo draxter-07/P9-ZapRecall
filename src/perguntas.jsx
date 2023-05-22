@@ -44,6 +44,9 @@ export default function Perguntas(){
             background-color: ${atr.back};
             border: none;
             margin: 0px 0px 0px 10px;
+            border-radius: 5px;
+            color: white;
+            padding: 5px;
         }`
         return(
             <But onClick={atr.click} value={atr.hold} data-test={atr.data_test}>{atr.hold}</But>
@@ -149,7 +152,7 @@ export default function Perguntas(){
     @media (min-width: 1px){
         box-sizing: border-box;
         width: 100%;
-        background-color: rgb(250, 250, 50);
+        background-color: rgb(200, 250, 50);
         padding: 20px 30px;
         border-radius: 15px;
         display: none;
@@ -175,7 +178,7 @@ export default function Perguntas(){
     @media (min-width: 1px){
         box-sizing: border-box;
         width: 100%;
-        background-color: rgb(250, 250, 50);
+        background-color: rgb(200, 250, 50);
         padding: 20px 30px;
         border-radius: 15px;
         display: none;
