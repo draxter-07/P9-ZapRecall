@@ -6,7 +6,7 @@ import icone_certo from './assets/icone_certo.png'
 import icone_quase from './assets/icone_quase.png'
 import icone_erro from './assets/icone_erro.png'
 
-let perguntas = [['Pergunta1', 'Resposta1'], ['Pergunta2', 'Resposta2'], ['Pergunta3', 'Resposta3']];
+let perguntas = [["O que é JSX?", "Uma extensão da linguagem JavaScript"], ["O React é __", "Uma biblioteca JavaScript para construção de interfaces" ], ["Componentes devem iniciar com __", "Letra maiúscula"], ["Podemos colocar __ dentro do JSX", "expressões"], ["O ReactDOM nos ajuda __", "Interagindo com a DOM para colocar componentes React na mesma"], ["Usamos o npm para __", "Gerenciar os pacotes necessários e suas dependências"], ["Usamos props para __", "Passar diferentes informações para componentes"], ["Usamos estado (state) para __", "Dizer para o React quais informações quando atualizadas devem renderizar a tela novamente"]];
 
 export default function Perguntas(){
     const [concluidos, setConc] = React.useState(0);
